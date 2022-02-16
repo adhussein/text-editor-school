@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | leafnotes.ml</title>
+    <link rel="shortcut icon" href="style/images/favicon/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/libs/paper.min.css">
+    <link rel="stylesheet" href="style/libs/animation.min.css">
+    <link rel="stylesheet" href="style/src/index.css">
+</head>
+<body style="background: #f8f9fa;"
+onload="function continuehere(){
+    document.querySelectorAll('.importanthide').forEach(element => {
+        element.classList.toggle('d-none');
+    });
+} continuehere();
+"
+ondblclick="function continuehere(){
+    document.querySelectorAll('.importanthide').forEach(element => {
+        element.classList.toggle('d-none');
+    });
+} continuehere();
+"
+>
+    <style>
+        .hidethis{
+            display: none !important;
+        }
+        .inpute.this{
+            width: 68.91px !important;
+            height: 57px !important;
+        }
+    </style>
+    <div class="importanthide container-fluid bg-dark py-3">
+        <div class="d-flex flex-column justify-content-center align-items-center container text-light">
+            <h1 class="">welcome to <span class="text-success">leafnotes</span>.ml</h1>
+            <div class="container d-flex justify-content-center align-items-center">
+                <p class="p-1">This is basically a website version of notepad.</p>
+            </div>
+            <div class="d-flex py-1 flex-wrap">
+                <button class="border-secondary mx-3" onclick="function continuehere(){
+                    document.querySelector('input.inpute.this').click();
+                } continuehere();
+                ">
+                open
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder2-open" viewBox="0 0 16 16">
+                    <path d="M1 3.5A1.5 1.5 0 0 1 2.5 2h2.764c.958 0 1.76.56 2.311 1.184C7.985 3.648 8.48 4 9 4h4.5A1.5 1.5 0 0 1 15 5.5v.64c.57.265.94.876.856 1.546l-.64 5.124A2.5 2.5 0 0 1 12.733 15H3.266a2.5 2.5 0 0 1-2.481-2.19l-.64-5.124A1.5 1.5 0 0 1 1 6.14V3.5zM2 6h12v-.5a.5.5 0 0 0-.5-.5H9c-.964 0-1.71-.629-2.174-1.154C6.374 3.334 5.82 3 5.264 3H2.5a.5.5 0 0 0-.5.5V6zm-.367 1a.5.5 0 0 0-.496.562l.64 5.124A1.5 1.5 0 0 0 3.266 14h9.468a1.5 1.5 0 0 0 1.489-1.314l.64-5.124A.5.5 0 0 0 14.367 7H1.633z"/>
+                </svg>
+                </button>
+                <button class="border-secondary mx-3" onclick="function continuehere(){
+                    document.querySelector('.continue').classList.remove('d-none')
+                    document.querySelector('.continue').classList.add('animate__backInRight')
+                } continuehere();
+                ">
+                new
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder-plus" viewBox="0 0 16 16">
+                    <path d="m.5 3 .04.87a1.99 1.99 0 0 0-.342 1.311l.637 7A2 2 0 0 0 2.826 14H9v-1H2.826a1 1 0 0 1-.995-.91l-.637-7A1 1 0 0 1 2.19 4h11.62a1 1 0 0 1 .996 1.09L14.54 8h1.005l.256-2.819A2 2 0 0 0 13.81 3H9.828a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 6.172 1H2.5a2 2 0 0 0-2 2zm5.672-1a1 1 0 0 1 .707.293L7.586 3H2.19c-.24 0-.47.042-.683.12L1.5 2.98a1 1 0 0 1 1-.98h3.672z"/>
+                    <path d="M13.5 10a.5.5 0 0 1 .5.5V12h1.5a.5.5 0 1 1 0 1H14v1.5a.5.5 0 1 1-1 0V13h-1.5a.5.5 0 0 1 0-1H13v-1.5a.5.5 0 0 1 .5-.5z"/>
+                  </svg>
+                </button>
+                <input type="file" class="position-absolute inpute opacity-0 this text-light border-secondary mx-3 dropboxOpen">
+                <button class="animate__animated btn-success mx-3 continue d-none" onclick="function continuehere(){
+                    document.querySelectorAll('.importanthide').forEach(element => {
+                        element.classList.toggle('d-none');
+                    });
+                } continuehere();
+                ">continue ></button>
+            </div>
+            
+        </div>
+    </div>
+    <div class="importanthide container-fluid py-3">
+        <div class="container d-flex justify-content-around align-items-center py-3">
+            <div class="container d-flex flex-wrap justify-content-around align-items-center">
+                <a href="#">contact</a>
+                <a href="#">portfolios</a>
+                <a href="#">more sites</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- menu -->
+    <div class="importanthide d-none bg-light sticky-top container-fluid d-flex flex-wrap py-1 border-bottom border-dark d-flex justify-content-around align-items-center">
+        <!-- title and save -->
+        <div class="align-items-center d-flex flex-wrap flex-row justify-content-evenly">
+            <input type="text" placeholder="untitled" id="title" class="border-dark"> 
+            <input type="text" id="saveasinput" class="border-dark" placeholder=".txt">
+        </div>
+        <!-- file -->
+        <div class="d-flex justify-content-start align-items-center">
+            <!-- file -->
+            <div class="px-1">
+                <!-- click this -->
+                <div onclick="function one(){ 
+                    document.getElementById('options').classList.toggle('d-none');
+                    document.getElementById('down').classList.toggle('d-none');
+                    document.getElementById('up').classList.toggle('d-none');
+                    }one();" class="p-1 cursor-pointer px-3 py-1">
+                    file
+                    <span id="down" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path>
+                            </svg>
+                    </span>
+                    <span id="up" class="d-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"></path>
+                        </svg>
+                    </span>
+                </div>
+                    <!-- option shows up -->
+                <div id="options" class="z-100 options position-absolute borders bg-light text-dark py-1 d-none">
+                    <p class="cursor-pointer m-0 px-3 py-0 w-100" onclick="function see(){
+                        document.getElementById('thisone').classList.toggle('d-none')
+                        document.getElementById('thisone').classList.toggle('animate__backInDown')
+                        document.body.classList.toggle('overflow-hidden');
+                        window.scroll(0,0);
+                    } see();">open</p>
+                    <p class="cursor-pointer m-0 px-3 py-0 w-100" onclick="saveFile()">save</p>
+                </div>
+            </div>
+            <!-- convert -->
+            <div class="px-1">
+                    <!-- click this -->
+                    <div onclick="function two(){ 
+                        document.getElementById('options-two').classList.toggle('d-none');
+                        document.getElementById('down-two').classList.toggle('d-none');
+                        document.getElementById('up-two').classList.toggle('d-none');
+                        }two();" class="p-1 cursor-pointer px-3 py-1">
+                        convert to
+                        <span id="down-two">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path>
+                            </svg>
+                        </span>
+                        <span id="up-two" class="d-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"></path>
+                            </svg>
+                        </span>
+                    </div>
+                    <!-- option shows up -->
+                    <div id="options-two" class="z-100 options position-absolute d-none borders bg-light text-dark py-1">
+                        <p class="cursor-pointer onhover-danger m-0 px-3 py-0 w-100" onclick="createPdf()">pdf</p>
+                        <p class="cursor-pointer m-0 px-3">wordpress</p>
+                        <p class="cursor-pointer m-0 px-3">png</p>
+                    </div>
+            </div>
+        </div>
+        <!-- style -->
+        <div class="d-flex justify-content-end align-items-center">
+            <!-- font-size -->
+            <div class="mx-2 border color text-center d-flex justify-content-evenly flex-row p-1">
+                <span class="cursor-pointer hover-gray border-raduis" id="up">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"></path>
+                    </svg>
+                </span>
+                <div id="number">0</div>
+                <span class="cursor-pointer hover-gray border-raduis" id="down">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path>
+                    </svg>
+                </span>
+            </div>
+            <!-- font-color -->
+            <div class="mx-2 slanted hover-gray border color text-center cursor-pointer" onclick="document.getElementById('color').click();">
+                <b>A</b>
+                <input id="color" type="color">
+            </div>
+            <!-- commen -->
+            <div class="d-flex flex-row mx-1">
+                <!-- bold -->
+                <div class="mx-2 slanted hover-gray border color text-center cursor-pointer">
+                    <p class="px-2 p-0 m-0 underline"><strong>B</strong></p>
+                </div>
+                <!-- italic -->
+                <div class="mx-2 slanted hover-gray border color text-center cursor-pointer">
+                    <p class="px-2 p-0 m-0 underline"><em>I</em></p>
+                </div>
+                <!-- italic -->
+                <div class="mx-2 slanted hover-gray border color text-center cursor-pointer">
+                    <p class="px-2 p-0 m-0 underline"><u>U</u></p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- dropbox -->
+    <div id="thisone" class="animate__animated d-none container-fluid fullone filter-background-blur">
+        <div id="thissecond" class="row w-100 h-100 d-flex justify-content-center align-items-center">
+            <div class="dropbox col col-lg-4 bg-dark text-light w-50 h-50 d-flex flex-column justify-content-around align-items-center">
+                
+                <div class="w-100 d-flex justify-content-end align-items-center">
+                    <div class="w-25 d-flex justify-content-around align-items-center">
+                        <div onclick="minimize()" class="px-2 py-1 cursor-pointer border-raduis text-danger border border-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z"></path>
+                            </svg>
+                        </div>
+                        <div onclick="exit()" class="px-2 py-1 cursor-pointer border-raduis text-danger border border-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"></path>
+                                <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <p>
+                        Drag and Drop files here
+                    </p>
+                    <p>
+                        OR
+                    </p>
+                    <input class="border border-1 border-light m-0 p-0 p-1 text-light inputOne" type="file">
+                </div>
+
+            </div>
+        </div>
+    </div>
+ 
+    <!-- document -->
+    <div class="importanthide d-none d-flex flex-column justify-content-center align-items-center document"><textarea class="importanthide d-none paper-document my-2 p-3 textarea"></textarea><textarea class="importanthide d-none paper-document my-2 p-3 textarea"></textarea></div>
+
+    <style>
+        .paper-document{
+            outline: none !important;
+            border: solid 1px black !important;
+            border-radius: 0 !important;
+            resize: none !important;
+            height: 1123px;
+            width: 723px;
+            background: white;
+            box-shadow: 0 1px 3px 1px rgb(60 64 67 / 15%);
+        } 
+        @media screen and (max-width: 800px) {
+            .document{
+                overflow: scroll;
+                align-items: baseline !important;
+            }
+        }
+    </style>
+
+    <!-- <script src="script/libs/pdfmake.js"></script> -->
+    <script src="script/libs/filesaver.js"></script>
+    <script src="script/src/index.js"></script>
+    <script src="script/src/convert.js"></script>
+</body>
+</html>
