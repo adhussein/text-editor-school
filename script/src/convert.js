@@ -18,7 +18,7 @@ function update(){
                 next.value = nextvalue.unshift(contentvalue.splice(lines, contentvalue.length));
                 nextvalue.unshift(contentvalue.splice(lines, contentvalue.length));
                 theElement.value = contentvalue.join("\n");
-                console.log("move down")
+                console.log("movedown")
             } else if(contentvalue.length > lines){
                 console.log("overflow new")
                 newpage = document.createElement("textarea");
