@@ -4,7 +4,36 @@ const inputOne = document.querySelector(".inputOne");
 const title = document.getElementById("title");
 const saveasinput = document.getElementById("saveasinput");
 var file, reader, type, titlename, typefile;
-var newpage, val, contentvalue, allvalue, next, nextvalue, lines, el;
+var newpage, val, contentvalue, allvalue, next, lines, el;
+const thedocument = document.querySelector(".document");
+function update(){
+    val = thedocument.childNodes;
+        val.forEach((theElement, index) => {
+            if(!theElement.id){
+                theElement.id ="page"+(index+1);
+            }
+            contentvalue = theElement.value.split("\n");
+            next = theElement.nextElementSibling;
+            lines = 3;
+            if(contentvalue.length > lines && next && next != theElement){
+                next.value =  contentvalue.splice(lines, contentvalue.length).join("\n") + "\n" + next.value;
+                theElement.value = contentvalue.join("\n");
+            } else if(contentvalue.length > lines){
+                newpage = document.createElement("textarea");
+                newpage.onclick =()=>{
+                }
+                newpage.dispatchEvent(new CustomEvent('click'));
+                newpage.click();
+                newpage.focus();
+                newpage.classList = "importanthide4 paper-document my-2 p-3 textarea";
+                newpage.value += contentvalue.splice(lines, contentvalue.length).join("\n");
+                theElement.value = contentvalue.join("\n");
+                thedocument.appendChild(newpage);
+            }
+        });
+    requestAnimationFrame(update)
+} update()
+
 allvalue = "";
 reader = new FileReader();
 type =".txt";
@@ -25,7 +54,6 @@ function saveFile(){
     val.forEach(element => {
         allvalue = allvalue + element.value + "\n";
     });
-    console.log(allvalue)
     var files = new File([allvalue], titlename, {type: "text/plain;charset=utf-8"});
     saveAs(files);
 }

@@ -61,3 +61,9 @@ input[type="color"]{
 .top-menu{
     width: 100vw;
 }
+
+a{
+    background-image: none !important;
+    text-decoration: none !important;
+    color: blue !important;
+}
